@@ -1,0 +1,54 @@
+ul a:hover {
+    color:#2196F3;
+}
+
+.section1 {
+    background-color:#2F303A;
+}
+
+h1 {
+    color: #ECECEC;
+}
+
+button {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.section2 {
+    background-color:#2F303A;
+}
+
+.ul1 a {
+    color: #FFFFFF;
+}
+
+.ul1 li p {
+    color:#FFFFFF;
+}
+
+nav ul li a {
+    color:#2F303A;
+}
+
+.section3 {
+    background-color:#2F303A;
+}
+
+.ul3 a {
+    color: #FFFFFF;
+}
+
+.ul3 li p {
+    color:#FFFFFF;
+}
+
+.ul4 li button {
+    background-color: #FFFFFF;
+    color:#212121;
+}
+ 
+.ul4 li button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
