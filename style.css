@@ -111,7 +111,7 @@ line-height: auto;
 .main-list-item-img {
     width: 370.0px;
     height: 294.0px;
-    padding-top: 50px;
+    margin-top: 50px;
 
 }
 
@@ -136,6 +136,7 @@ line-height: auto;
     text-align: center;
     line-height: auto;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .team-subtitle {
@@ -144,24 +145,28 @@ line-height: auto;
     font-weight: 500;
     line-height: auto;
     text-align: center;
+    padding: 30px 70px 10px 70px;
 }
 
-.team-text{
+.team-text {
     color: var(--color-grey);
     font-size: 16px;
     font-weight: 400;
     line-height: auto;
     text-align: center;
+    padding: 0 70px 30px 70px;
 }
 
-.team-img{
+.team-img {
     width: 270.0px;
     height: 260.0px; 
 }
 
-.photo {
-    background-color: var(--color-white);
-    width: 270px;
+.block {
+    background-color:var(--color-white);
+    width: 270.0px;
+    height: 368.0px;
+    border-radius: 0 0 4px 4px;
 }
 
 .footer-section {
