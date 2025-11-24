@@ -12,6 +12,8 @@
     --color-grey: #757575;
     --section-hero-bacground: #2F303A;
     --section-team-bacground:#F5F4FA;
+    --section-portfolio-btn: #F5F4FA;
+    --border-color:#EEE;
 }
 
 ul {
@@ -178,10 +180,6 @@ line-height: auto;
     line-height: auto;
 }
 
-/* .footer-list {
-    margin: 20px auto 60px auto;
-} */
-
 .footer-text {
     color: var(--color-white);
     font-size: 14px;
@@ -197,28 +195,60 @@ line-height: auto;
     line-height: 1.7;
 }
 
-.portfolio-list-item-btn {
-    background-color:#F5F4FA;
-    color: #212121;
-    font-weight: medium;
+.portfolio-btn {
+    background-color:var(--section-portfolio-btn);
+    background-color:var(--color-blue);
+    color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 4px;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    text-align: center;
+    width: 112.0px;
+    height: 38.0px;
+
+}
+
+.portfolio-block {
+    width: 370.0px;
+    height: 404.0px;
+    background-color: var(--color-white);
+    border: 1px solid var(--border-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .portfolio-list-item {
-    background-color: #EEEEEE;
+    background-color: var(--color-white);
+}
+
+.portfolio-photo {
+    width: 370.0px;
+    height: 294.0px;
 }
 
 .portfolio-subtitle {
-    color: #212121;
-    font-weight: bold;
+    color: var(--color-black);
+    font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin: 20px 24px 4px 24px;
 }
 
 .portfolio-text {
-    color: #757575;
-    font-weight: regular;
+    color: var(--color-grey);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
+    margin: 0 24px 20px 24px;
+}
+
+.section-buttons {
+    margin-top: 94px;
+    margin-bottom: 34px;
+}
+
+.section-photo {
+    margin-bottom: 94px;
 }
