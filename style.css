@@ -1,9 +1,3 @@
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 :root {
     --color-white:#FFFFFF;
     --color-blue: #2196F3;
@@ -14,6 +8,12 @@
     --section-team-bacground:#F5F4FA;
     --section-portfolio-btn: #F5F4FA;
     --border-color:#EEE;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 ul {
@@ -34,6 +34,7 @@ font-family: "Raleway";
 font-weight: 700;
 font-size: 26px;
 line-height: auto;
+text-decoration: none;
 }
 
 .header-nav {
@@ -43,12 +44,27 @@ line-height: auto;
     text-decoration: none;
 }
 
+.header-list {
+    display: flex;
+
+}
+
 .header-link {
     color: var(--color-black);
+    cursor: pointer;
+}
+
+.header-link:hover {
+    color: var(--color-blue);
 }
 
 .header-address-link {
     color: var(--color-grey);
+    cursor: pointer;
+}
+
+.header-address-link:hover {
+    color: var(--color-blue);
 }
 
 .section-header {
