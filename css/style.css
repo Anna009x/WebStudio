@@ -16,6 +16,12 @@
     padding: 0 15px;
 }
 
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 ul {
     list-style: none;
 }
@@ -42,11 +48,15 @@ text-decoration: none;
     font-size: 14px;
     line-height: auto;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .header-list {
     display: flex;
-
+    align-items: center;
+    gap: 50px;
 }
 
 .header-link {
