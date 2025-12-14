@@ -31,6 +31,13 @@ body {
     flex-wrap: nowrap;
 }
 
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .header-logo {
 color:var(--color-blue);
 font-family: "Raleway";
@@ -109,9 +116,10 @@ text-decoration: none;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 696px;
+    letter-spacing: 2.64px;
+    font-style: normal;
+    text-transform: uppercase;
 }
 
 .hero-btn {
@@ -123,10 +131,7 @@ text-decoration: none;
     font-weight: 800;
     text-align: center;
     line-height: 1.8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+    margin-top: 30px; 
 }
 
 .main-list {
