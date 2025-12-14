@@ -40,6 +40,14 @@ line-height: auto;
 text-decoration: none;
 }
 
+.header-logo-blue {
+    color: var(--color-blue);
+}
+
+.header-logo-black {
+    color: var(--color-dark);
+}
+
 .header-nav {
     font-weight: 500;
     font-size: 14px;
@@ -52,6 +60,10 @@ text-decoration: none;
 .header-list {
     display: flex;
     gap: 50px;
+}
+
+.header-list2 a[href^="tel"] {
+    white-space: nowrap;
 }
 
 .header-list2 {
@@ -117,6 +129,11 @@ text-decoration: none;
     margin-top: 30px;
 }
 
+.main-list {
+    display: flex;
+    gap: 30px;
+}
+
 .main-subtitle {
     color: var(--color-black);
     font-weight: 700;
@@ -162,6 +179,11 @@ text-decoration: none;
     padding-bottom: 94px;
 }
 
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
 .team-title {
     color: var(--color-black);
     font-size: 36px;
@@ -177,7 +199,12 @@ text-decoration: none;
     font-weight: 500;
     line-height: auto;
     text-align: center;
-    padding: 30px 70px 10px 70px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .team-text {
@@ -186,7 +213,10 @@ text-decoration: none;
     font-weight: 400;
     line-height: auto;
     text-align: center;
-    padding: 0 70px 30px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 .team-img {
