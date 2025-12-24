@@ -8,6 +8,7 @@
     --section-team-bacground:#F5F4FA;
     --section-portfolio-btn: #F5F4FA;
     --border-color:#EEE;
+
 }
 
 .container {
@@ -144,6 +145,36 @@ text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     line-height: auto;
+}
+
+.main-subtitle::before {
+    content: "";
+    width: 270.0px;
+    height: 120.0px;
+    background-color:var(--section-team-bacground);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-subtitle.antena::before {
+    content: "";
+    background-image: url(../img/Group.png);
+}
+
+.main-subtitle.clock::before {
+    content: "";
+    background-image: url(../img/Vector.png);
+}
+
+.main-subtitle.diagrama::before {
+    content: "";
+    background-image: url(../img/Vector\ \(1\).png);
+}
+
+.main-subtitle.people::before {
+    content: "";
+    background-image: url(../img/astronaut\ 1.png);
 }
 
 .main-text {
