@@ -162,6 +162,7 @@ text-decoration: none;
 .hero-btn:hover {
     width: 218px;
     height: 52px;
+    cursor: pointer;
 }
 
 .main-list {
