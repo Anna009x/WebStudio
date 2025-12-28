@@ -87,19 +87,34 @@ text-decoration: none;
 .header-link {
     color: var(--color-black);
     cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 
 .header-link:hover {
     color: var(--color-blue);
 }
 
+.header-link::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
+}
+
 .header-address-link {
     color: var(--color-grey);
     cursor: pointer;
+    position: relative;
 }
 
 .header-address-link:hover {
     color: var(--color-blue);
+}
+
+.header-address-link::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
 }
 
 .section-header {
@@ -110,6 +125,7 @@ text-decoration: none;
 
 .section-hero {
     background-color:var(--section-hero-bacground);
+    background-image: url(../img/overlay.png), url(../img/hero-bg.png);
     color: var(--color-white);
     margin: 0 auto 94 auto;
     height: 600px;
@@ -139,6 +155,8 @@ text-decoration: none;
     line-height: 1.8;
     margin-top: 30px; 
     border-radius: 4px;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .main-list {
@@ -151,9 +169,10 @@ text-decoration: none;
     font-weight: 700;
     font-size: 14px;
     line-height: auto;
+
 }
 
-.main-subtitle::before {
+.main-item::before {
     content: "";
     width: 270.0px;
     height: 120.0px;
@@ -161,24 +180,25 @@ text-decoration: none;
     display: block;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 30px;
 }
 
-.main-subtitle.antena::before {
+.main-item:nth-child(1)::before {
     content: "";
     background-image: url(../img/vector-2.png);
 }
 
-.main-subtitle.clock::before {
+.main-item:nth-child(2)::before {
     content: "";
     background-image: url(../img/vector-3.png);
 }
 
-.main-subtitle.diagrama::before {
+.main-item:nth-child(3)::before {
     content: "";
     background-image: url(../img/vector-1.png);
 }
 
-.main-subtitle.people::before {
+.main-item:nth-child(4)::before {
     content: "";
     background-image: url(../img/vector-4.png);
 }
@@ -187,6 +207,7 @@ text-decoration: none;
     color: var(--color-grey);
     font-size: 14px;
     line-height: 1.7;
+    margin-top: 10px;
 }
 
 
@@ -203,6 +224,7 @@ text-decoration: none;
     width: 370.0px;
     height: 294.0px;
     margin-top: 50px;
+    background: url() lightgray 50% / cover no-repeat;
 
 }
 
@@ -264,6 +286,7 @@ text-decoration: none;
 .team-img {
     width: 270.0px;
     height: 260.0px; 
+    background: url() lightgray -40.687px -0.224px / 175.271% 121.356% no-repeat;
 }
 
 .team-item {
@@ -291,7 +314,10 @@ text-decoration: none;
 }
 
 .footer-list {
-    margin: 20px auto 60px auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .footer-text {
@@ -363,6 +389,7 @@ text-decoration: none;
 .portfolio-img {
     width: 370.0px;
     height: 294.0px;
+    background: url() lightgray 50% / cover no-repeat;
 }
 
 .portfolio-subtitle {
