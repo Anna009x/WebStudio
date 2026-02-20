@@ -8,7 +8,7 @@
     --section-team-bacground:#F5F4FA;
     --section-portfolio-btn: #F5F4FA;
     --border-color:#EEE;
-
+    --team-icons-color:#AFB1B8;
 }
 
 .container {
@@ -75,15 +75,6 @@ text-decoration: none;
     gap: 50px;
 }
 
-.header-list2 a[href^="tel"] {
-    white-space: nowrap;
-}
-
-.header-list2 {
-    display: flex;
-    gap: 50px;
-}
-
 .header-link {
     color: var(--color-black);
     cursor: pointer;
@@ -95,26 +86,50 @@ text-decoration: none;
     color: var(--color-blue);
 }
 
-.header-link::after {
-    content: "";
-    position: absolute;
-    inset: -10px;
+.header-list2 a[href^="tel"] {
+    white-space: nowrap;
 }
+
+
+
+.header-list2 {
+    display: flex;
+   align-items: center;
+}
+
+.mail {
+    width: 16.0px;
+    height: 12.0px;
+    fill: var(--color-grey);
+    position: relative;
+}
+
+.mail:hover {
+    fill: var(--color-blue);
+    cursor: pointer;
+}
+
+.smartphone {
+   width: 10.0px;
+   height: 16.0px;
+   fill: var(--color-grey);
+}
+
+.smartphone:hover {
+    fill: var(--color-blue);
+    cursor: pointer;
+}
+
 
 .header-address-link {
     color: var(--color-grey);
     cursor: pointer;
-    position: relative;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 
 .header-address-link:hover {
     color: var(--color-blue);
-}
-
-.header-address-link::after {
-    content: "";
-    position: absolute;
-    inset: -10px;
 }
 
 .section-header {
@@ -249,11 +264,6 @@ text-decoration: none;
     padding-bottom: 94px;
 }
 
-.team-list {
-    display: flex;
-    gap: 30px;
-}
-
 .team-title {
     color: var(--color-black);
     font-size: 36px;
@@ -261,6 +271,17 @@ text-decoration: none;
     line-height: auto;
     font-weight: 700;
     margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-item {
+    background-color:var(--color-white);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
 }
 
 .team-subtitle {
@@ -286,7 +307,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
 }
 
 .team-img {
@@ -295,12 +316,130 @@ text-decoration: none;
     background: url() lightgray -40.687px -0.224px / 175.271% 121.356% no-repeat;
 }
 
-.team-item {
-    background-color:var(--color-white);
-    width: 270.0px;
-    height: 368.0px;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px 0 rgba(0, 0, 0, 0.20);
+.team-list-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.team-item-icons {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-item-icons:hover {
+    background-color: var(--color-blue);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.instagram {
+    width: 20.0px;
+    height: 20.0px; 
+    fill: var(--team-icons-color);
+}
+
+.team-item-icons:hover svg {
+  fill: var(--color-white);
+}
+
+.twitter {
+    width: 20.0px;
+    height: 20.0px;
+    fill: var(--team-icons-color);
+}
+
+.facebook {
+    width: 20.0px;
+    height: 20.0px;
+    fill: var(--team-icons-color);
+}
+
+.linkedin {
+    width: 20.0px;
+    height: 20.0px;
+    fill: var(--team-icons-color);
+}
+
+.section-customers {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.customers-title {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+
+.customers-list {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.customers-item {
+    width: 170.0px;
+    height: 92.0px;
+    border: 1px solid var(--team-icons-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customers-item:hover {
+    border-color: var(--color-blue);
+    cursor: pointer;
+}
+
+.customers-svg:hover {
+    fill: var(--color-blue);
+    cursor: pointer;
+}
+
+.icon-ya-co {
+    width: 41.0px;
+    height: 46.7px;
+    fill: var(--team-icons-color);
+}
+
+.icon-company-tag-here {
+    width: 40.0px;
+    height: 52.0px;
+    fill: var(--team-icons-color);
+}
+
+.icon-company-2 {
+    width: 43.5px;
+    height: 41.2px;
+    fill: var(--team-icons-color);
+}
+
+.icon-foster-peters {
+    width: 84.4px;
+    height: 40.6px;
+    fill: var(--team-icons-color);
+}
+
+.icon-brand {
+    width: 62.5px;
+    height: 45.4px;
+    fill: var(--team-icons-color);
+}
+
+.icon-company-tag-line {
+    width: 93.8px;
+    height: 43.9px;
+    fill: var(--team-icons-color);
 }
 
 .footer-section {
