@@ -8,7 +8,7 @@
     --section-team-bacground:#F5F4FA;
     --section-portfolio-btn: #F5F4FA;
     --border-color:#EEE;
-    --team-icons-color:#AFB1B8;
+    --icons-color:#AFB1B8;
 }
 
 .container {
@@ -340,7 +340,7 @@ text-decoration: none;
 .instagram {
     width: 20.0px;
     height: 20.0px; 
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .team-item-icons:hover svg {
@@ -350,19 +350,19 @@ text-decoration: none;
 .twitter {
     width: 20.0px;
     height: 20.0px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .facebook {
     width: 20.0px;
     height: 20.0px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .linkedin {
     width: 20.0px;
     height: 20.0px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .section-customers {
@@ -389,7 +389,7 @@ text-decoration: none;
 .customers-item {
     width: 170.0px;
     height: 92.0px;
-    border: 1px solid var(--team-icons-color);
+    border: 1px solid var(--icons-color);
     border-radius: 4px;
     display: flex;
     align-items: center;
@@ -404,42 +404,43 @@ text-decoration: none;
 .customers-svg:hover {
     fill: var(--color-blue);
     cursor: pointer;
+   
 }
 
 .icon-ya-co {
     width: 41.0px;
     height: 46.7px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .icon-company-tag-here {
     width: 40.0px;
     height: 52.0px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .icon-company-2 {
     width: 43.5px;
     height: 41.2px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .icon-foster-peters {
     width: 84.4px;
     height: 40.6px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .icon-brand {
     width: 62.5px;
     height: 45.4px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .icon-company-tag-line {
     width: 93.8px;
     height: 43.9px;
-    fill: var(--team-icons-color);
+    fill: var(--icons-color);
 }
 
 .footer-section {
@@ -456,6 +457,12 @@ text-decoration: none;
     font-weight: 700;
     font-size: 26px;  
     line-height: auto;
+}
+
+.footer-address {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
 }
 
 .footer-list {
@@ -478,6 +485,51 @@ text-decoration: none;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
+}
+
+.footer-connection {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-subtitle {
+    color: var(--color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.footer-list2 {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-item2 {
+    width: 44.0px;
+    height: 44.0px;
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-item2:hover {
+    background-color: var(--color-blue);
+    cursor: pointer;
+}
+
+
+.footer-icons {
+    width: 20.0px;
+    height: 20.0px;
+    fill: var(--color-white);
 }
 
 .section-portfolio {
