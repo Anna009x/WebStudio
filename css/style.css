@@ -79,7 +79,7 @@ text-decoration: none;
     color: var(--color-black);
     cursor: pointer;
     display: inline-block;
-    position: relative;
+    /* position: relative; */
 }
 
 .header-link:hover {
@@ -101,7 +101,7 @@ text-decoration: none;
     width: 16.0px;
     height: 12.0px;
     fill: var(--color-grey);
-    position: relative;
+    /* position: relative; */
 }
 
 .mail:hover {
@@ -241,13 +241,36 @@ text-decoration: none;
    margin: 0 auto;
 }
 
+.main-list-item {
+    position: relative;
+}
+
 .main-list-item-img {
     width: 370.0px;
     height: 294.0px;
     margin-top: 50px;
     background: url() lightgray 50% / cover no-repeat;
-
 }
+
+.main-block {
+    background-color: rgba(47, 48, 58, 0.80);
+    width: 370.0px;
+    height: 70.0px;
+    color: var(--color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
 
 .main-section {
     padding-top: 94px;
